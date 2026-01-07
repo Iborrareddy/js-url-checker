@@ -1,7 +1,12 @@
-# js-url-checker 🛡️  
+# js-url-checker 🛡️ : Bulk JavaScript URL Validator
 A high-performance, dependency-free Python tool to validate and download JavaScript assets in bulk.
 
 `js-url-checker` is designed for security researchers, developers, and web archivists who need to verify large lists of JavaScript URLs. It efficiently distinguishes between live scripts and dead links, handles redirects, and helps ensure that what you download is actually JavaScript, not a masked “Access Denied” HTML page.
+
+
+<img width="2752" height="1536" alt="Gemini_Generated_Image_nvcte9nvcte9nvct" src="https://github.com/user-attachments/assets/224876d8-f19e-4445-9ef8-f9c666c9dc0e" />
+
+
 
 ## ✨ Key Features
 - ⚡ **High Concurrency**: Uses multi-threading to process many URLs quickly.
@@ -36,27 +41,26 @@ https://website.com/assets/app.min.js?v=1.2
 
 
 ## 📖 Usage
-# Basic validation
+### Basic validation
 ```bash
 python3 checker.py -i js_files.txt
 ```
-# Use more/less workers
+### Use more/less workers
 python3 checker.py -i js_files.txt -w 30
 
-
-# Increase timeout
+### Increase timeout
 ```bash
 python3 checker.py -i js_files.txt -t 20
 ```
-# Enable stricter JS header checks
+### Enable stricter JS header checks
 ```bash
 python3 checker.py -i js_files.txt --check-js-header
 ```
-# Download active JS files
+### Download active JS files
 ```bash
 python3 checker.py -i js_files.txt --download --outdir active_js_downloads
 ```
-# Change CSV report file name
+### Change CSV report file name
 ```bash
 python3 checker.py -i js_files.txt --csv results.csv
 ```
