@@ -1,4 +1,4 @@
-# js-url-checker 🛡️ : Bulk JavaScript URL Validator
+# Js-Url-Checker 🛡️ : Bulk JavaScript URL Validator
 A high-performance, dependency-free Python tool to validate and download JavaScript assets in bulk.
 
 `js-url-checker` is designed for security researchers, developers, and web archivists who need to verify large lists of JavaScript URLs. It efficiently distinguishes between live scripts and dead links, handles redirects, and helps ensure that what you download is actually JavaScript, not a masked “Access Denied” HTML page.
