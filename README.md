@@ -44,7 +44,9 @@ https://website.com/assets/app.min.js?v=1.2
 python3 checker.py -i js_files.txt
 ```
 ### Use more/less workers
+```bash
 python3 checker.py -i js_files.txt -w 30
+```
 
 ### Increase timeout
 ```bash
