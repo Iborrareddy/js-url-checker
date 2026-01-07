@@ -3,9 +3,7 @@ A high-performance, dependency-free Python tool to validate and download JavaScr
 
 `js-url-checker` is designed for security researchers, developers, and web archivists who need to verify large lists of JavaScript URLs. It efficiently distinguishes between live scripts and dead links, handles redirects, and helps ensure that what you download is actually JavaScript, not a masked “Access Denied” HTML page.
 
-
-<img width="2752" height="1536" alt="Gemini_Generated_Image_nvcte9nvcte9nvct" src="https://github.com/user-attachments/assets/224876d8-f19e-4445-9ef8-f9c666c9dc0e" />
-
+<img width="2750" height="1092" alt="Gemini_Generated_Image_nvcte9nvcte9nvct" src="https://github.com/user-attachments/assets/98ab5927-971d-41a5-964a-0a6eb88cb61e" />
 
 
 ## ✨ Key Features
