@@ -20,10 +20,47 @@ A high-performance, dependency-free Python tool to validate and download JavaScr
 ### 2) Installation
 Clone the repository:
 ```bash
-git clone https://github.com/yourusername/js-url-checker.git
+git clone https://github.com/Iborrareddy/js-url-checker.git
 cd js-url-checker
+```
+### 3) Prepare Input
+
+Create a file named `js_files.txt` and add your URLs (one per line).  
+Use `#` for comments or to disable URLs.
+
+```txt
+https://cdn.example.com/js/main.js
+https://website.com/assets/app.min.js?v=1.2
+# https://old-site.com/broken.js
+```
 
 
+## 📖 Usage
+# Basic validation
+```bash
+python3 checker.py -i js_files.txt
+```
+# Use more/less workers
+python3 checker.py -i js_files.txt -w 30
 
 
-
+# Increase timeout
+```bash
+python3 checker.py -i js_files.txt -t 20
+```
+# Enable stricter JS header checks
+```bash
+python3 checker.py -i js_files.txt --check-js-header
+```
+# Download active JS files
+```bash
+python3 checker.py -i js_files.txt --download --outdir active_js_downloads
+```
+# Change CSV report file name
+```bash
+python3 checker.py -i js_files.txt --csv results.csv
+```
+### ⚖️ Disclaimer
+```bash
+This project is intended for educational and authorized security testing purposes only. The author is not responsible for misuse or damage caused by this tool. Use responsibly and within legal boundaries.
+```
